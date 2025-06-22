@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusswar - Soulful Instruments for Great Life</title>
+    <link rel="icon" href="assets/anusswar.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/anusswar.jpg" alt="Anusswar Logo" width="40" height="40">
+                <h1><b>অনুস্বর / Anusswar</b></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login_signup.html">Log In / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>SOULFUL INSTRUMENTS FOR GREAT LIFE</h2>
+                    <p>অনুস্বর / Anusswar is a Bangladeshi brand specializing in handcrafted Guitars, Ukuleles, Guitaleles, Sandhis and more. Established in 2020</p>
+                    <a href="products.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <section class="slideshow-section">
+    <div class="container">
+        <h2 class="section-title">ANUSSWAR MOMENTS</h2>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/SLIDE1.jpg" alt="Anusswar Moment 1">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE2.jpg" alt="Anusswar Moment 2">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE3.jpg" alt="Anusswar Moment 3">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE4.jpg" alt="Anusswar Moment 4">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE5.jpg" alt="Anusswar Moment 5">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE6.jpg" alt="Anusswar Moment 6">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="assets/SLIDE7.jpg" alt="Anusswar Moment 7">
+            </div>
+            
+            <!-- Navigation buttons - moved outside slide divs -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <!-- Navigation dots - correctly positioned -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Featured Products -->
+        <section class="featured-products"let slideIndex = 1;
+
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Products will be dynamically loaded here -->
+                    <div class="loading">Loading products...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <a href="products.html?category=Guitar" class="category-card">
+                        <h3>Guitars</h3>
+                    </a>
+                    <a href="products.html?category=Ukuleles" class="category-card">
+                        <h3>Ukuleles</h3>
+                    </a>
+                    <a href="products.html?category=Guitaleles" class="category-card">
+                        <h3>Guitaleles</h3>
+                    </a>
+                    <a href="products.html?category=Sandhis" class="category-card">
+                        <h3>Sandhis</h3>
+                    </a>
+                    <a href="products.html?category=Accessories" class="category-card">
+                        <h3>Accessories</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>অনুস্বর / Anusswar</h3>
+                    <p>SOULFUL INSTRUMENTS FOR GREAT LIFE</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: anusswarguitars@gmail.com</p>
+                    <p>Phone: (+88) 01721-514669</p>
+                    <p>Address: Shonirakhra, Gobindapur Road no. 1, Dhaka, Bangladesh</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anusswar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="auth-ui.js"></script>
+    <script type="module" src="../Backend/index-service.js"></script>
+    <a href="dashboard.html" class="floating-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="button-icon" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+            <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 16 0A8 8 0 0 1 0 10zm8-7a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7z"/>
+        </svg>
+  Dashboard
+</a>
+</body>
+</html>
